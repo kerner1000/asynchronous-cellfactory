@@ -35,7 +35,11 @@ public abstract class AsynchronousCellFactory<E, T> implements Callback<TableCol
 			}
 		    };
 		    service.setOnSucceeded(e -> {
-			setText(e.getSource().getValue().toString());
+			if (e.getSource().getValue() == null) {
+			    setText("n/a");
+			} else {
+			    setText(e.getSource().getValue().toString());
+			}
 		    });
 		    service.setOnFailed(e -> {
 			final Throwable t = e.getSource().getException();
