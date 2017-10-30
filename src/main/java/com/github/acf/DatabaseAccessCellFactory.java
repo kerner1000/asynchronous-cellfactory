@@ -18,8 +18,18 @@ public class DatabaseAccessCellFactory extends AsynchronousCellFactory<ExampleEn
 	    @Override
 	    protected String call() throws Exception {
 		// simulate db access
-		Thread.sleep(20);
-		return Integer.toString(index);
+		Thread.sleep(200);
+		switch (index) {
+		case 1:
+		    return rowDataItem.getColumnA();
+		case 2:
+		    return rowDataItem.getColumnB();
+		case 3:
+		    return rowDataItem.getColumnC();
+		default:
+		    return "Unknown property";
+		}
+
 	    }
 	};
     }

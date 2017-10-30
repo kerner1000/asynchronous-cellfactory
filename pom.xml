@@ -4,7 +4,7 @@
   <artifactId>asynchronous-cellfactory</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Asynchronous CellFactory</name>
-  <description>A CellFactory that displays a placeholder text until the actual cell value has been computed in the background.</description>
+  <description>A cell factory that displays a placeholder text until the actual cell value has been computed in a background task.</description>
   <developers>
 		<developer>
 			<id>kerner</id>
