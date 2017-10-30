@@ -31,9 +31,9 @@ public class ExampleTable extends Application {
 	stage.setWidth(300);
 	stage.setHeight(500);
 
-	final TableColumn<ExampleEntity, String> c1 = new TableColumn<>("C1");
-	final TableColumn<ExampleEntity, String> c2 = new TableColumn<>("C2");
-	final TableColumn<ExampleEntity, String> c3 = new TableColumn<>("C3");
+	final TableColumn<ExampleEntity, String> c1 = new TableColumn<>("A");
+	final TableColumn<ExampleEntity, String> c2 = new TableColumn<>("B");
+	final TableColumn<ExampleEntity, String> c3 = new TableColumn<>("C");
 
 	c1.setPrefWidth(100);
 	c2.setPrefWidth(100);
